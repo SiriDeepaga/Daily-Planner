@@ -1,6 +1,5 @@
-Daily Planner Web Application
-
- Overview
+### Daily Planner Web Application
+##Overview
 
 This project is a full-stack daily planner web application that helps users manage their day effectively by organizing tasks, tracking small achievements, and scheduling events.
 
