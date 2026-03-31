@@ -1,5 +1,5 @@
 ### Daily Planner Web Application
-##Overview
+## Overview
 
 This project is a full-stack daily planner web application that helps users manage their day effectively by organizing tasks, tracking small achievements, and scheduling events.
 
@@ -52,6 +52,11 @@ npm start
 
 This project was developed as part of an internship assignment.
 Due to time constraints, backend deployment is pending, but the application works fully in a local environment.
+
+---
+## Live Demo
+Frontend: https://your-vercel-link  
+Backend: https://daily-planner-4.onrender.com
 
 ---
 
