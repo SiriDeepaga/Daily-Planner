@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.auth-page,
+.simple-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(2px);
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 380px;
+  padding: 35px 30px;
+  background: rgba(255, 255, 255, 0.38);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card h1 {
+  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #1f2937;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.switch-text {
+  font-size: 14px;
+  color: #374151;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.message-text {
+  margin-top: 14px;
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.page-note,
+.profile-line,
+.saved-text {
+  color: #374151;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.home-layout {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.logo-text {
+  margin: 0 0 20px;
+  color: #1f2937;
+}
+
+.nav-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #1f2937;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  margin-top: auto;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.top-bar h1 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.date-box {
+  background: rgba(255, 255, 255, 0.55);
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.content-card {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 22px;
+  min-height: 180px;
+}
+
+.content-card h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.single-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.single-panel .content-card {
+  width: 100%;
+  max-width: 850px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.input-row input {
+  margin-bottom: 0;
+}
+
+.small-btn {
+  width: auto;
+  min-width: 90px;
+  margin-top: 0;
+}
+
+.tiny-btn {
+  width: auto;
+  min-width: 70px;
+  padding: 8px 10px;
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.list-item {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.win-item {
+  border-left: 4px solid #10b981;
+}
+
+.action-row,
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.done-text {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.sub-head {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.diary-card {
+  min-height: 420px;
+}
+
+.diary-area {
+  min-height: 220px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.saved-block {
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.mood-btn {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .input-row,
+  .button-row {
+    flex-direction: column;
+  }
+
+  .small-btn,
+  .tiny-btn {
+    width: 100%;
+  }
+
+  .mood-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
