@@ -55,7 +55,7 @@ Due to time constraints, backend deployment is pending, but the application work
 
 ---
 ## Live Demo
-Frontend: https://your-vercel-link  
+Frontend: https://daily-planner-gec8.vercel.app/  
 Backend: https://daily-planner-4.onrender.com
 
 ---
